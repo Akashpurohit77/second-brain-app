@@ -7,6 +7,8 @@ app.use(express.json());
 import { JWT_PASSWORD } from "./config";
 import { userMiddleware } from "./middleware";
 import { random } from "./utils";
+import cors from "cors";
+app.use(cors());
 
 // types.d.ts
 import { Request } from "express";
